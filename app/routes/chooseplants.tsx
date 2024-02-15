@@ -1,9 +1,13 @@
-import { Form, useLoaderData } from '@remix-run/react';
+import { Form, redirect, useLoaderData } from '@remix-run/react';
 import plantData from '../data/planting_data.json';
 
 // Use mock data for now
 export const loader = () => {
   return plantData;
+};
+
+export const action = async () => {
+  return redirect('/gardenplanner');
 };
 
 export default function ChoosePlants() {
@@ -19,6 +23,7 @@ export default function ChoosePlants() {
             <label htmlFor={plant}>{plant}</label>
           </div>
         ))}
+        <button type="submit">Let&apos;s grow!</button>
       </Form>
     </div>
   );
