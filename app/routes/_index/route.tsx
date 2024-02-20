@@ -1,5 +1,6 @@
 import type { MetaFunction } from '@remix-run/node';
 import { Form, redirect } from '@remix-run/react';
+import styles from './styles.module.css';
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,10 +15,15 @@ export const action = async () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Where do you live?</h1>
       <Form method="post">
-        <input type="text" name="zip" />
+        <input
+          type="text"
+          pattern="[0-9]{5}"
+          name="zipcode"
+          placeholder="zipcode"
+        />
         <button type="submit">Let&apos;s grow!</button>
       </Form>
     </div>

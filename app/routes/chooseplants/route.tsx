@@ -1,5 +1,5 @@
 import { Form, redirect, useLoaderData } from '@remix-run/react';
-import plantData from '../data/planting_data.json';
+import plantData from '~/data/planting_data.json';
 
 // Use mock data for now
 export const loader = () => {
