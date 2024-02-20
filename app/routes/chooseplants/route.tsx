@@ -1,5 +1,6 @@
 import { Form, redirect, useLoaderData } from '@remix-run/react';
-import plantData from '../data/planting_data.json';
+import plantData from '~/data/planting_data.json';
+import styles from './styles.module.css';
 
 // Use mock data for now
 export const loader = () => {
@@ -13,14 +14,14 @@ export const action = async () => {
 export default function ChoosePlants() {
   const plantData = useLoaderData<typeof loader>();
   return (
-    <div>
+    <div className={styles.container}>
       <h1>What are you growing?</h1>
 
       <Form method="post">
-        {Object.keys(plantData).map((plant) => (
-          <div key={plant}>
-            <input type="checkbox" name={plant} id={plant} />
-            <label htmlFor={plant}>{plant}</label>
+        {Object.entries(plantData).map(([key, { name }]) => (
+          <div key={key}>
+            <input type="checkbox" name={name} id={key} />
+            <label htmlFor={name}>{name}</label>
           </div>
         ))}
         <button type="submit">Let&apos;s grow!</button>

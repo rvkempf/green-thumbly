@@ -1,353 +1,431 @@
 {
-    "arugula": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 40,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "basil": {
-        "indoor_start": -28,
-        "first_planting": 14,
-        "first_harvest": 60,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 18,
-        "plant_spacing": 12
-    },
-    "beets": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 55,
-        "last_harvest": 70,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 3
-    },
-    "broccoli": {
-        "indoor_start": -56,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": 100,
-        "min_temp": 45,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "brussels_sprouts": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": 120,
-        "min_temp": 45,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "cabbage": {
-        "indoor_start": -56,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": 100,
-        "min_temp": 45,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "carrots": {
-        "indoor_start": null,
-        "first_planting": -14,
-        "first_harvest": 70,
-        "last_harvest": null,
-        "min_temp": 40,
-        "row_spacing": 12,
-        "plant_spacing": 2
-    },
-    "celery": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": 120,
-        "min_temp": 60,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "chard": {
-        "indoor_start": null,
-        "first_planting": -14,
-        "first_harvest": 55,
-        "last_harvest": 90,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "chive": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 30,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 6,
-        "plant_spacing": 6
-    },
-    "cilantro": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 60,
-        "last_harvest": 90,
-        "min_temp": 50,
-        "row_spacing": 6,
-        "plant_spacing": 6
-    },
-    "collard_greens": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": 100,
-        "min_temp": 40,
-        "row_spacing": 18,
-        "plant_spacing": 12
-    },
-    "corn": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 70,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 24,
-        "plant_spacing": 12
-    },
-    "cucumbers": {
-        "indoor_start": -14,
-        "first_planting": 14,
-        "first_harvest": 60,
-        "last_harvest": 90,
-        "min_temp": 60,
-        "row_spacing": 36,
-        "plant_spacing": 12
-    },
-    "dill": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "eggplant": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": 120,
-        "min_temp": 60,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "green_beans": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 50,
-        "last_harvest": 70,
-        "min_temp": 60,
-        "row_spacing": 12,
-        "plant_spacing": 3
-    },
-    "green_onions": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 30,
-        "last_harvest": 60,
-        "min_temp": 40,
-        "row_spacing": 6,
-        "plant_spacing": 2
-    },
-    "kale": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": 100,
-        "min_temp": 40,
-        "row_spacing": 18,
-        "plant_spacing": 12
-    },
-    "lettuce": {
-        "indoor_start": null,
-        "first_planting": -14,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 35,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "lovage": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "melons": {
-        "indoor_start": -14,
-        "first_planting": 14,
-        "first_harvest": 80,
-        "last_harvest": 100,
-        "min_temp": 60,
-        "row_spacing": 36,
-        "plant_spacing": 18
-    },
-    "mint": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 40,
-        "row_spacing": 24,
-        "plant_spacing": 12
-    },
-    "mustard_greens": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 40,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "okra": {
-        "indoor_start": -14,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": 90,
-        "min_temp": 60,
-        "row_spacing": 24,
-        "plant_spacing": 12
-    },
-    "oregano": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 60,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 12
-    },
-    "parsley": {
-        "indoor_start": -56,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "peppers": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 60,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "potatoes": {
-        "indoor_start": null,
-        "first_planting": 7,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 45,
-        "row_spacing": 12,
-        "plant_spacing": 9
-    },
-    "pumpkins": {
-        "indoor_start": -14,
-        "first_planting": 14,
-        "first_harvest": 100,
-        "last_harvest": null,
-        "min_temp": 60,
-        "row_spacing": 48,
-        "plant_spacing": 36
-    },
-    "radish": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 30,
-        "last_harvest": 40,
-        "min_temp": 45,
-        "row_spacing": 6,
-        "plant_spacing": 2
-    },
-    "sage": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "spinach": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 35,
-        "row_spacing": 12,
-        "plant_spacing": 6
-    },
-    "strawberry": {
-        "indoor_start": null,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": 120,
-        "min_temp": 40,
-        "row_spacing": 12,
-        "plant_spacing": 12
-    },
-    "summer_squash": {
-        "indoor_start": -14,
-        "first_planting": 14,
-        "first_harvest": 50,
-        "last_harvest": 70,
-        "min_temp": 60,
-        "row_spacing": 36,
-        "plant_spacing": 18
-    },
-    "thyme": {
-        "indoor_start": -84,
-        "first_planting": 14,
-        "first_harvest": 90,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 12,
-        "plant_spacing": 12
-    },
-    "tomatillo": {
-        "indoor_start": -56,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "tomatoes": {
-        "indoor_start": -56,
-        "first_planting": 14,
-        "first_harvest": 70,
-        "last_harvest": null,
-        "min_temp": 50,
-        "row_spacing": 24,
-        "plant_spacing": 18
-    },
-    "turnip": {
-        "indoor_start": null,
-        "first_planting": -28,
-        "first_harvest": 40,
-        "last_harvest": 60,
-        "min_temp": 40,
-        "row_spacing": 12,
-        "plant_spacing": 3
-    }
+  "arugula": {
+    "name": "Arugula",
+    "indoor_start": -28,
+    "first_planting": -14,
+    "last_planting": 28,
+    "first_harvest": 20,
+    "last_harvest": 40,
+    "minimum_temp": 40,
+    "row_spacing": 6,
+    "plant_spacing": 3
+  },
+  "basil": {
+    "name": "Basil",
+    "indoor_start": -42,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 60,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "beets": {
+    "name": "Beets",
+    "indoor_start": null,
+    "first_planting": -21,
+    "last_planting": 35,
+    "first_harvest": 55,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 3
+  },
+  "broccoli": {
+    "name": "Broccoli",
+    "indoor_start": -49,
+    "first_planting": -21,
+    "last_planting": 14,
+    "first_harvest": 60,
+    "last_harvest": 90,
+    "minimum_temp": 45,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "brussels sprouts": {
+    "name": "Brussels Sprouts",
+    "indoor_start": -56,
+    "first_planting": -21,
+    "last_planting": 0,
+    "first_harvest": 90,
+    "last_harvest": 120,
+    "minimum_temp": 45,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "cabbage": {
+    "name": "Cabbage",
+    "indoor_start": -42,
+    "first_planting": -21,
+    "last_planting": 14,
+    "first_harvest": 60,
+    "last_harvest": 100,
+    "minimum_temp": 45,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "carrots": {
+    "name": "Carrots",
+    "indoor_start": null,
+    "first_planting": -14,
+    "last_planting": 70,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 45,
+    "row_spacing": 12,
+    "plant_spacing": 2
+  },
+  "celery": {
+    "name": "Celery",
+    "indoor_start": -84,
+    "first_planting": 7,
+    "last_planting": 35,
+    "first_harvest": 120,
+    "last_harvest": null,
+    "minimum_temp": 55,
+    "row_spacing": 6,
+    "plant_spacing": 6
+  },
+  "chard": {
+    "name": "Chard",
+    "indoor_start": -28,
+    "first_planting": 14,
+    "last_planting": 70,
+    "first_harvest": 50,
+    "last_harvest": null,
+    "minimum_temp": 45,
+    "row_spacing": 12,
+    "plant_spacing": 6
+  },
+  "chive": {
+    "name": "Chive",
+    "indoor_start": -42,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 6,
+    "plant_spacing": 6
+  },
+  "cilantro": {
+    "name": "Cilantro",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 60,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 6,
+    "plant_spacing": 3
+  },
+  "collard greens": {
+    "name": "Collard Greens",
+    "indoor_start": null,
+    "first_planting": -21,
+    "last_planting": 14,
+    "first_harvest": 60,
+    "last_harvest": 120,
+    "minimum_temp": 45,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "corn": {
+    "name": "Corn",
+    "indoor_start": null,
+    "first_planting": -21,
+    "last_planting": 14,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 24,
+    "plant_spacing": 12
+  },
+  "cucumbers": {
+    "name": "Cucumbers",
+    "indoor_start": -28,
+    "first_planting": 14,
+    "last_planting": 56,
+    "first_harvest": 50,
+    "last_harvest": 80,
+    "minimum_temp": 60,
+    "row_spacing": 24,
+    "plant_spacing": 12
+  },
+  "dill": {
+    "name": "Dill",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 60,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 6
+  },
+  "eggplant": {
+    "name": "Eggplant",
+    "indoor_start": -49,
+    "first_planting": 14,
+    "last_planting": 42,
+    "first_harvest": 100,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 24,
+    "plant_spacing": 18
+  },
+  "green beans": {
+    "name": "Green Beans",
+    "indoor_start": null,
+    "first_planting": 0,
+    "last_planting": 28,
+    "first_harvest": 50,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 12,
+    "plant_spacing": 4
+  },
+  "green onions": {
+    "name": "Green Onions",
+    "indoor_start": null,
+    "first_planting": -7,
+    "last_planting": 42,
+    "first_harvest": 30,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 4,
+    "plant_spacing": 2
+  },
+  "kale": {
+    "name": "Kale",
+    "indoor_start": -28,
+    "first_planting": -14,
+    "last_planting": 35,
+    "first_harvest": 60,
+    "last_harvest": 120,
+    "minimum_temp": 45,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "lettuce": {
+    "name": "Lettuce",
+    "indoor_start": -28,
+    "first_planting": -7,
+    "last_planting": 49,
+    "first_harvest": 40,
+    "last_harvest": 80,
+    "minimum_temp": 40,
+    "row_spacing": 6,
+    "plant_spacing": 6
+  },
+  "lovage": {
+    "name": "Lovage",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "melons": {
+    "name": "Melons",
+    "indoor_start": -21,
+    "first_planting": 14,
+    "last_planting": 42,
+    "first_harvest": 80,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 36,
+    "plant_spacing": 36
+  },
+  "mint": {
+    "name": "Mint",
+    "indoor_start": null,
+    "first_planting": 14,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "mustard greens": {
+    "name": "Mustard Greens",
+    "indoor_start": null,
+    "first_planting": -14,
+    "last_planting": 42,
+    "first_harvest": 40,
+    "last_harvest": 80,
+    "minimum_temp": 45,
+    "row_spacing": 6,
+    "plant_spacing": 6
+  },
+  "okra": {
+    "name": "Okra",
+    "indoor_start": -21,
+    "first_planting": 14,
+    "last_planting": 28,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 24,
+    "plant_spacing": 12
+  },
+  "oregano": {
+    "name": "Oregano",
+    "indoor_start": -28,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "parsley": {
+    "name": "Parsley",
+    "indoor_start": -42,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 6,
+    "plant_spacing": 6
+  },
+  "peppers": {
+    "name": "Peppers",
+    "indoor_start": -56,
+    "first_planting": 14,
+    "last_planting": 35,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "potatoes": {
+    "name": "Potatoes",
+    "indoor_start": null,
+    "first_planting": -21,
+    "last_planting": 28,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 45,
+    "row_spacing": 12,
+    "plant_spacing": 8
+  },
+  "pumpkins": {
+    "name": "Pumpkins",
+    "indoor_start": -21,
+    "first_planting": 14,
+    "last_planting": 35,
+    "first_harvest": 100,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 36,
+    "plant_spacing": 36
+  },
+  "radish": {
+    "name": "Radish",
+    "indoor_start": null,
+    "first_planting": -14,
+    "last_planting": 42,
+    "first_harvest": 30,
+    "last_harvest": null,
+    "minimum_temp": 40,
+    "row_spacing": 6,
+    "plant_spacing": 2
+  },
+  "sage": {
+    "name": "Sage",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 55,
+    "row_spacing": 18,
+    "plant_spacing": 18
+  },
+  "spinach": {
+    "name": "Spinach",
+    "indoor_start": null,
+    "first_planting": -14,
+    "last_planting": 28,
+    "first_harvest": 40,
+    "last_harvest": null,
+    "minimum_temp": 35,
+    "row_spacing": 6,
+    "plant_spacing": 3
+  },
+  "strawberry": {
+    "name": "Strawberry",
+    "indoor_start": null,
+    "first_planting": -28,
+    "last_planting": 42,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 50,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "summer squash": {
+    "name": "Summer Squash",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 42,
+    "first_harvest": 50,
+    "last_harvest": 70,
+    "minimum_temp": 60,
+    "row_spacing": 36,
+    "plant_spacing": 36
+  },
+  "thyme": {
+    "name": "Thyme",
+    "indoor_start": null,
+    "first_planting": 7,
+    "last_planting": 70,
+    "first_harvest": 90,
+    "last_harvest": null,
+    "minimum_temp": 60,
+    "row_spacing": 12,
+    "plant_spacing": 12
+  },
+  "tomatoes": {
+    "name": "Tomatoes",
+    "indoor_start": -49,
+    "first_planting": 14,
+    "last_planting": 42,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 55,
+    "row_spacing": 24,
+    "plant_spacing": 24
+  },
+  "tomatillo": {
+    "name": "Tomatillo",
+    "indoor_start": -28,
+    "first_planting": 14,
+    "last_planting": 42,
+    "first_harvest": 70,
+    "last_harvest": null,
+    "minimum_temp": 55,
+    "row_spacing": 24,
+    "plant_spacing": 24
+  },
+  "turnip": {
+    "name": "Turnip",
+    "indoor_start": null,
+    "first_planting": -14,
+    "last_planting": 42,
+    "first_harvest": 30,
+    "last_harvest": null,
+    "minimum_temp": 40,
+    "row_spacing": 12,
+    "plant_spacing": 4
+  }
 }
