@@ -1,3 +1,5 @@
+@import url('../../styles/colors.css');
+
 .container {
     width: 100%;
     padding-top: 3rem;
@@ -10,4 +12,38 @@
 .container button {
     margin-top: 0.5rem;
     width: 100%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.formContainer > div {
+    display: block;
+    height: 300px;
+    overflow: scroll;
+    padding-right: 1rem;
+}
+
+.formContainer > div:first-of-type {
+    border: 1px solid var(--secondary-color);
+}
+
+.formContainer > div:last-of-type {
+    width: 11rem;
+}
+
+.formContainer h2 {
+    margin-top: 0;
 }
