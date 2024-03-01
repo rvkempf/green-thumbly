@@ -1,0 +1,13 @@
+@import url('../../../../styles/colors.css');
+
+.plantLabel {
+    text-align: end;
+}
+
+.rowTimeline {
+    width: 100%;
+    display: grid;
+    height: 1rem;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+}

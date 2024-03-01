@@ -7,8 +7,15 @@ interface PlanningChartProps {
 }
 
 export const PlanningChart: React.FC<PlanningChartProps> = ({ plants }) => {
-  const rows = plants.map((plant) => (
-    <PlantRow key={plant.name} plant={plant} />
+  const rows = plants.map((plant, i) => (
+    <PlantRow key={plant.name} plant={plant} row={i + 1} />
   ));
-  return <div className={styles.chartContainer}>{rows}</div>;
+  return (
+    <div
+      className={styles.chartContainer}
+      style={{ gridTemplateRows: `repeat(${rows.length}, 1fr)` }}
+    >
+      {rows}
+    </div>
+  );
 };
