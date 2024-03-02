@@ -1,4 +1,4 @@
-.chartContainer {
+.chart {
     display: grid;
     width: 100%;
     grid-template-columns: max-content 1fr;

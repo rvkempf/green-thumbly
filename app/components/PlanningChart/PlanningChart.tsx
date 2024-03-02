@@ -12,7 +12,7 @@ export const PlanningChart: React.FC<PlanningChartProps> = ({ plants }) => {
   ));
   return (
     <div
-      className={styles.chartContainer}
+      className={styles.chart}
       style={{ gridTemplateRows: `repeat(${rows.length}, 1fr)` }}
     >
       {rows}
