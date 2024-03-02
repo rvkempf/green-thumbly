@@ -12,7 +12,7 @@ export const PlantingRange: React.FC<PlantingRangeProps> = ({
   return (
     <div
       className={styles.plantingRange}
-      style={{ gridColumn: `${startDay} / ${endDay + 1}` }}
+      style={{ gridColumn: `${startDay} / ${endDay}` }}
     />
   );
 };

@@ -8,6 +8,10 @@
     width: 100%;
     display: grid;
     height: 1rem;
+    column-gap: 1px;
+}
+
+.dayBlock {
     background-color: var(--secondary-color);
-    border-bottom: 1px solid var(--primary-color);
+    grid-row: 1;
 }

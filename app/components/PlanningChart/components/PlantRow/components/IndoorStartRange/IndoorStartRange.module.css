@@ -3,5 +3,6 @@
 .indoorStartRange {
     grid-row: 1;
     height: 100%;
-    background-color: orange;
+    background-color: green;
+    opacity: 0.6;
 }

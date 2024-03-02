@@ -3,5 +3,6 @@
 .harvestRange {
     grid-row: 1;
     height: 100%;
-    background-color: green;
+    background-color: orange;
+    opacity: 0.6;
 }

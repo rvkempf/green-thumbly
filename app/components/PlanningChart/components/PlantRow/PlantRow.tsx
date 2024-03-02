@@ -24,6 +24,13 @@ export const PlantRow: React.FC<PlantRowProps> = ({
   const seedStartDay = plant.indoorStart
     ? lastFrostDay + plant.indoorStart
     : lastFrostDay + plant.firstPlanting;
+  const dayBlocks = [...Array(numDays)].map((_, i) => (
+    <div
+      key={i}
+      className={styles.dayBlock}
+      style={{ gridColumn: `${i + 1} / ${i + 2}` }}
+    />
+  ));
   return (
     <>
       <label
@@ -40,6 +47,7 @@ export const PlantRow: React.FC<PlantRowProps> = ({
           gridTemplateColumns: `repeat(${numDays}, 1fr)`,
         }}
       >
+        {dayBlocks}
         {plant.indoorStart && (
           <IndoorStartRange
             startDay={lastFrostDay + plant.indoorStart}
@@ -53,7 +61,9 @@ export const PlantRow: React.FC<PlantRowProps> = ({
         <HarvestRange
           startDay={seedStartDay + plant.firstHarvest}
           endDay={
-            plant.lastHarvest ? seedStartDay + plant.lastHarvest : firstFrostDay
+            plant.lastHarvest
+              ? lastFrostDay + plant.lastPlanting + plant.lastHarvest
+              : firstFrostDay
           }
         />
       </div>

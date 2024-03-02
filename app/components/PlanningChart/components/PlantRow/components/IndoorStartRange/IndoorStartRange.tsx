@@ -12,7 +12,7 @@ export const IndoorStartRange: React.FC<IndoorStartRangeProps> = ({
   return (
     <div
       className={styles.indoorStartRange}
-      style={{ gridColumn: `${startDay} / ${endDay + 1}` }}
+      style={{ gridColumn: `${startDay} / ${endDay}` }}
     />
   );
 };

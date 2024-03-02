@@ -12,7 +12,7 @@ export const HarvestRange: React.FC<HarvestRangeProps> = ({
   return (
     <div
       className={styles.harvestRange}
-      style={{ gridColumn: `${startDay} / ${endDay + 1}` }}
+      style={{ gridColumn: `${startDay} / ${endDay}` }}
     />
   );
 };
