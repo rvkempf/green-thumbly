@@ -1,7 +1,3 @@
-export const daysInYear = (date: Date) => {
-  return isLeapYear(date.getFullYear()) ? 366 : 365;
-};
+import moment from 'moment';
 
-const isLeapYear = (year: number) => {
-  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
-};
+export const daysInYear = () => moment().endOf('year').dayOfYear();

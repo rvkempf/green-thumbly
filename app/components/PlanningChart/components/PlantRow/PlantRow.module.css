@@ -7,7 +7,7 @@
 .rowTimeline {
     width: 100%;
     display: grid;
-    height: 1rem;
+    /* height: 1rem; */
     column-gap: 1px;
 }
 

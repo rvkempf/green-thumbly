@@ -1,0 +1,15 @@
+@import url('../../../../styles/colors.css');
+
+.axis {
+    display: grid;
+    width: 100%;
+    grid-row: 2;
+    grid-column: 2;
+    column-gap: 2px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.weekBlock {
+    background-color: var(--secondary-color);
+}
