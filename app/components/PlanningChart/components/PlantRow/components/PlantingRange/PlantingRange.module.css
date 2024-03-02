@@ -1,0 +1,8 @@
+@import url('../../../../../../styles/colors.css');
+
+.plantingRange {
+    grid-row: 1;
+    height: 100%;
+    background-color: yellow;
+    opacity: 0.6;
+}
