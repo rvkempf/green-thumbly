@@ -78,7 +78,7 @@
   },
   "celery": {
     "name": "Celery",
-    "indoorStart": -84,
+    "indoorStart": -20,
     "firstPlanting": 7,
     "lastPlanting": 35,
     "firstHarvest": 120,

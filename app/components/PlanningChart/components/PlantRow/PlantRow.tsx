@@ -12,19 +12,18 @@ interface PlantRowProps {
   row: number;
 }
 
-const numDays = daysInYear(new Date());
-
 export const PlantRow: React.FC<PlantRowProps> = ({
-  lastFrostDay = 80,
-  firstFrostDay = 315,
+  lastFrostDay,
+  firstFrostDay,
   plant,
   row,
 }) => {
+  const numCols = daysInYear();
   const gridRow = `${row} / ${row + 1}`;
   const seedStartDay = plant.indoorStart
     ? lastFrostDay + plant.indoorStart
     : lastFrostDay + plant.firstPlanting;
-  const dayBlocks = [...Array(numDays)].map((_, i) => (
+  const dayBlocks = [...Array(numCols)].map((_, i) => (
     <div
       key={i}
       className={styles.dayBlock}
@@ -44,7 +43,7 @@ export const PlantRow: React.FC<PlantRowProps> = ({
         style={{
           gridColumn: '2 / 3',
           gridRow,
-          gridTemplateColumns: `repeat(${numDays}, 1fr)`,
+          gridTemplateColumns: `repeat(${numCols}, 1fr)`,
         }}
       >
         {dayBlocks}
