@@ -1,0 +1,11 @@
+.frostLineContainer {
+    display: grid;
+    grid-column: 2 / 3;
+    width: 100%;
+    column-gap: 1px;
+}
+
+.frostLine {
+    height: 100%;
+    z-index: 9999;
+}
