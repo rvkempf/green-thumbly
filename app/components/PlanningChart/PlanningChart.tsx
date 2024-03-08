@@ -5,14 +5,17 @@ import { MonthAxis } from './components/MonthAxis/MonthAxis';
 import { WeekAxis } from './components/WeekAxis/WeekAxis';
 import { FrostLine } from './components/LastFrostLine/LastFrostLine';
 
-const lastFrostDay = 80;
-const firstFrostDay = 315;
-
 interface PlanningChartProps {
   plants: PlantCollection;
+  lastFrostDay: number;
+  firstFrostDay: number;
 }
 
-export const PlanningChart: React.FC<PlanningChartProps> = ({ plants }) => {
+export const PlanningChart: React.FC<PlanningChartProps> = ({
+  plants,
+  lastFrostDay,
+  firstFrostDay,
+}) => {
   const rows = plants.map((plant, i) => (
     <PlantRow
       key={plant.name}

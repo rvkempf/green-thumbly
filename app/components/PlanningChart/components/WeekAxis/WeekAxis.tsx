@@ -5,6 +5,7 @@ import moment from 'moment';
 export const WeekAxis: React.FC = () => {
   const firstWeekBlock = (
     <div
+      key={`firstweek`}
       className={styles.weekBlock}
       style={{ gridColumn: `1 / ${moment().week(1).dayOfYear() + 1}` }}
     />
@@ -34,7 +35,7 @@ export const WeekAxis: React.FC = () => {
     const endDay = daysInYear() + 1;
     weekBlocks.push(
       <div
-        key={`week52`}
+        key={`finalweek`}
         className={styles.weekBlock}
         style={{ gridColumn: `${startDay} / ${endDay}` }}
       />,

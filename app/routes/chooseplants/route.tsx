@@ -2,19 +2,34 @@ import { Form, redirect, useLoaderData } from '@remix-run/react';
 import plantData from '~/data/planting_data.json';
 import styles from './styles.module.css';
 import { useState } from 'react';
+import { plants } from '~/cookies/plants';
+import { LoaderFunctionArgs, ActionFunctionArgs, json } from '@remix-run/node';
 
 // Use mock data for now
-export const loader = () => {
-  return plantData;
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const cookieHeader = request.headers.get('Cookie');
+  const cookie: { plants?: string[] } =
+    (await plants.parse(cookieHeader)) || {};
+  return json({ plants: cookie.plants || [] });
 };
 
-export const action = async () => {
-  return redirect('/gardenplanner');
+export const action = async ({ request }: ActionFunctionArgs) => {
+  const cookieHeader = request.headers.get('Cookie');
+  const cookie = (await plants.parse(cookieHeader)) || {};
+  const formData: FormData = await request.formData();
+
+  const formPlants = formData.getAll('plant');
+  cookie.plants = formPlants;
+  return redirect('/gardenplanner', {
+    headers: {
+      'Set-Cookie': await plants.serialize(cookie),
+    },
+  });
 };
 
 export default function ChoosePlants() {
-  const plantData = useLoaderData<typeof loader>();
-  const [selectedPlants, setSelectedPlants] = useState<string[]>([]);
+  const initialPlants = useLoaderData<typeof loader>().plants;
+  const [selectedPlants, setSelectedPlants] = useState<string[]>(initialPlants);
   return (
     <div className={styles.container}>
       <h1>What are you growing?</h1>
@@ -27,7 +42,7 @@ export default function ChoosePlants() {
                 <input
                   type="checkbox"
                   id={key}
-                  name={name}
+                  name="plant"
                   value={name}
                   checked={selectedPlants.includes(name)}
                   onChange={(e) => {
@@ -46,7 +61,7 @@ export default function ChoosePlants() {
           </div>
 
           <div>
-            <h2>I'm growing:</h2>
+            <h2>I&apos;m growing:</h2>
             <ul>
               {selectedPlants.length ? (
                 selectedPlants

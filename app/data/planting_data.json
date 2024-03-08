@@ -43,7 +43,7 @@
     "rowSpacing": 18,
     "plantSpacing": 18
   },
-  "brussels sprouts": {
+  "brussels_sprouts": {
     "name": "Brussels Sprouts",
     "indoorStart": -56,
     "firstPlanting": -21,
@@ -120,7 +120,7 @@
     "rowSpacing": 6,
     "plantSpacing": 3
   },
-  "collard greens": {
+  "collard_greens": {
     "name": "Collard Greens",
     "indoorStart": null,
     "firstPlanting": -21,
@@ -175,7 +175,7 @@
     "rowSpacing": 24,
     "plantSpacing": 18
   },
-  "green beans": {
+  "green_beans": {
     "name": "Green Beans",
     "indoorStart": null,
     "firstPlanting": 0,
@@ -186,7 +186,7 @@
     "rowSpacing": 12,
     "plantSpacing": 4
   },
-  "green onions": {
+  "green_onions": {
     "name": "Green Onions",
     "indoorStart": null,
     "firstPlanting": -7,
@@ -252,7 +252,7 @@
     "rowSpacing": 12,
     "plantSpacing": 12
   },
-  "mustard greens": {
+  "mustard_greens": {
     "name": "Mustard Greens",
     "indoorStart": null,
     "firstPlanting": -14,
