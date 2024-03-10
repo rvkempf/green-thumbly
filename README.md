@@ -1,38 +1,33 @@
-# Welcome to Remix!
+# Welcome to Green Thumbly
 
-- [Remix Docs](https://remix.run/docs)
+Green Thumbly is a simple app for scheduling your garden, built using Remix. Simply enter your location, select the plants you want to grow, and Green Thumbly does the work to provide you with a personalized chart of planting and harvesting times that you can use for planning.
+
+Currently this project is a WIP, but future plans include:
+
+- Replacing the temporary, AI-generated plant data with real, accurate data
+- Making the chart interactive and scalable
+- Letting you modify the chart's recommended planting dates with your actual planting dates
+- Incorporating current weather records and forecasts to improve temperature predictions
+- Improving the theme and UI to not look like it was designed by a software engineer
+
+## Dependencies
+
+Install dependencies with npm or yarn:
+
+```sh
+npm install
+```
+
+This app also relies on the [ZipZoneFrostAPI](https://github.com/griggs333/ZipZoneFrostAPI).
 
 ## Development
 
-From your terminal:
+First, start ZipZoneFrostAPI locally.
+
+Then start the dev server:
 
 ```sh
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+This starts the app in development mode on port 3000, rebuilding assets on file changes.
