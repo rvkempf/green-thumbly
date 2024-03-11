@@ -1,0 +1,50 @@
+.legendContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+
+    span {
+        margin-right: 0.25rem;
+    }
+}
+
+.block {
+    opacity: 0.6;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.line {
+    opacity: 1;
+    width: 3px;
+    height: 0.75rem;
+}
+
+.indoorStartRange {
+    background-color: green;
+}
+
+.plantingRange {
+    background-color: yellow;
+}
+
+.harvestRange {
+    background-color: orange;
+}
+
+.lastFrostLine {
+    background-color: red;
+}
+
+.firstFrostLine {
+    background-color: blue;
+}

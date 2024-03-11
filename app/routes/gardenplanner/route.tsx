@@ -15,14 +15,14 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   const frostDates = await fetch(
     `http://127.0.0.1:8080/zipcode?zip=${userInfoCookie.zipcode}`,
   );
-  const { last_t32_fp80_date, first_t32_fp80_date } = await frostDates.json();
+  const { last_t32_fp50_date, first_t32_fp50_date } = await frostDates.json();
   const lastFrostDay = moment()
-    .month(last_t32_fp80_date.month)
-    .date(last_t32_fp80_date.day)
+    .month(last_t32_fp50_date.month)
+    .date(last_t32_fp50_date.day)
     .dayOfYear();
   const firstFrostDay = moment()
-    .month(first_t32_fp80_date.month)
-    .date(first_t32_fp80_date.day)
+    .month(first_t32_fp50_date.month)
+    .date(first_t32_fp50_date.day)
     .dayOfYear();
 
   return json({
@@ -44,7 +44,8 @@ export default function GardenPlanner() {
     .map(([_, data]) => data);
 
   return (
-    <div className={styles.chartContainer}>
+    <div className={styles.container}>
+      <h1>{moment().year()} Gardening Schedule</h1>
       <PlanningChart
         plants={filteredPlants}
         lastFrostDay={lastFrostDay}
