@@ -7,31 +7,41 @@ export const WeekAxis: React.FC = () => {
     <div
       key={`firstweek`}
       className={styles.weekBlock}
-      style={{ gridColumn: `1 / ${moment().week(1).dayOfYear() + 1}` }}
+      style={{
+        gridColumn: `1 / ${moment().startOf('year').week(1).endOf('week').dayOfYear() + 1}`,
+      }}
     />
   );
 
   const weekBlocks = [firstWeekBlock];
 
   for (let i = 2; i < 53; i++) {
-    const startDay =
-      moment()
-        .week(i - 1)
-        .dayOfYear() + 1;
-    const endDay = moment().week(i).dayOfYear() + 1;
+    const startDay = moment()
+      .startOf('year')
+      .week(i)
+      .startOf('week')
+      .dayOfYear();
+    const endDay =
+      moment().startOf('year').week(i).endOf('week').dayOfYear() + 1;
     weekBlocks.push(
       <div
         key={`week${i}`}
         className={styles.weekBlock}
         style={{ gridColumn: `${startDay} / ${endDay}` }}
       >
-        {moment().week(i).startOf('week').date()}
+        {moment().startOf('year').week(i).startOf('week').date()}
       </div>,
     );
   }
 
-  if (moment().week(52).dayOfYear() < daysInYear()) {
-    const startDay = moment().week(52).dayOfYear() + 1;
+  if (
+    moment().startOf('year').week(53).startOf('week').dayOfYear() < daysInYear()
+  ) {
+    const startDay = moment()
+      .startOf('year')
+      .week(53)
+      .startOf('week')
+      .dayOfYear();
     const endDay = daysInYear() + 1;
     weekBlocks.push(
       <div

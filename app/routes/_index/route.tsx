@@ -48,7 +48,7 @@ export default function Index() {
           placeholder="zipcode"
           defaultValue={zipcode}
         />
-        <button type="submit">Let&apos;s grow!</button>
+        <button type="submit">Next</button>
       </Form>
     </div>
   );
